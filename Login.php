@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
         session_start(); 
         $row = $result->fetch_assoc();
-        $_SESSION['id_Uzivatele'] = $row['Id_Uzivatele']; /
+        $_SESSION['id_Uzivatele'] = $row['Id_Uzivatele']; 
 
         header("Location: Main.php");
         exit(); 
